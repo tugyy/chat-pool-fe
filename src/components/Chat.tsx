@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io(process.env.REACT_APP_SOCKET_URL);
+const socket = io(import.meta.env.VITE_SOCKET_URL);
 
 interface ChatProps {
   username: string;
